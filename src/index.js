@@ -65,30 +65,6 @@ async function alphabetSearchHandler(e) {
 
   await searchCocktails(e.target.value, getCocktailsByLetter);
 
-  // try {
-  //   const filteredCocktailByLetter = await getCocktailsByLetter(e.target.value);
-
-  //   showNotFoundMsg(
-  //     filteredCocktailByLetter,
-  //     elementsRef.cocktailsListEl,
-  //     elementsRef.paginationEl
-  //   );
-
-  //   if (filteredCocktailByLetter) {
-  //     renderGallery(
-  //       filteredCocktailByLetter,
-  //       elementsRef.cocktailsListEl,
-  //       createCocktailCardMarkup
-  //     );
-  //     createPagination(
-  //       filteredCocktailByLetter,
-  //       elementsRef.cocktailsListEl,
-  //       createCocktailCardMarkup
-  //     );
-  //   }
-  // } catch (error) {
-  //   console.log(error);
-  // }
 }
 
 async function alphabetSearchMobileHandler(e) {
@@ -97,32 +73,6 @@ async function alphabetSearchMobileHandler(e) {
   activeFill();
 
   await searchCocktails(e.target.dataset.value, getCocktailsByLetter);
-  // try {
-  //   const filteredCocktailByLetter = await getCocktailsByLetter(
-  //     e.target.dataset.value
-  //   );
-
-  //   showNotFoundMsg(
-  //     filteredCocktailByLetter,
-  //     elementsRef.cocktailsListEl,
-  //     elementsRef.paginationEl
-  //   );
-
-  //   if (filteredCocktailByLetter) {
-  //     renderGallery(
-  //       filteredCocktailByLetter,
-  //       elementsRef.cocktailsListEl,
-  //       createCocktailCardMarkup
-  //     );
-  //     createPagination(
-  //       filteredCocktailByLetter,
-  //       elementsRef.cocktailsListEl,
-  //       createCocktailCardMarkup
-  //     );
-  //   }
-  // } catch (error) {
-  //   console.log(error);
-  // }
 }
 
 // Handle search query
@@ -134,30 +84,6 @@ async function searchFormHandler(e) {
   } else {
     await searchCocktails(searchQuery, getCocktailByName);
     document.querySelector('.header').classList.remove('menu-active');
-    // try {
-    //   const filteredCocktailsByName = await getCocktailByName(searchQuery);
-
-    //   showNotFoundMsg(
-    //     filteredCocktailsByName,
-    //     elementsRef.cocktailsListEl,
-    //     elementsRef.paginationEl
-    //   );
-
-    //   if (filteredCocktailsByName) {
-    //     renderGallery(
-    //       filteredCocktailsByName,
-    //       elementsRef.cocktailsListEl,
-    //       createCocktailCardMarkup
-    //     );
-    //     createPagination(
-    //       filteredCocktailsByName,
-    //       elementsRef.cocktailsListEl,
-    //       createCocktailCardMarkup
-    //     );
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
   }
 }
 
@@ -212,8 +138,6 @@ async function cocktailCardHandler(e) {
   }
   if (e.target.classList.contains('js-btn-more')) {
     const cocktailInfo = await getCocktailsById(cocktailId);
-
-    // const ingredientModalContent = createIngredientsListMarkup(cocktailInfo[0]);
 
     const cocktailModalContent = createCocktailModalMarkup(cocktailInfo[0]);
 
