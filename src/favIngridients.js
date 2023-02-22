@@ -13,7 +13,6 @@ import { createIngredientModalMarkup } from './js/modals/ingredientModalMarkup';
 import { createIngredientModal } from './js/modals/createModal';
 import { showMsgNotFound } from './js/utils/utils';
 import { getFavItemsByIds } from './js/elementsFav/getFavItems';
-import { setDefaultTheme } from './js/changeColorTheme';
 import { changeColorTheme } from './js/changeColorTheme';
 
 window.addEventListener('load', favIngredientHandler);

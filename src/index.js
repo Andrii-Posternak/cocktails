@@ -27,7 +27,6 @@ elementsRef.cocktailsListEl.addEventListener('click', cocktailCardHandler);
 elementsRef.searchFormRef.addEventListener('submit', searchFormHandler);
 elementsRef.themeColorToggleEl.addEventListener('change', themeColorHandler);
 
-
 initAlphabetSearch();
 generateRandomCocktails();
 
@@ -64,7 +63,6 @@ async function alphabetSearchHandler(e) {
   if (e.target.nodeName !== 'BUTTON') return;
 
   await searchCocktails(e.target.value, getCocktailsByLetter);
-
 }
 
 async function alphabetSearchMobileHandler(e) {
@@ -150,7 +148,6 @@ async function cocktailCardHandler(e) {
 }
 
 function themeColorHandler() {
-  console.log('test');
   changeColorTheme();
 }
 

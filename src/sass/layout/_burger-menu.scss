@@ -5,28 +5,26 @@
   transform: translateX(-50%);
   width: 320px;
   height: 100vh;
-  // margin-left: auto;
-  // margin-right: auto;
   transition: 250ms;
   background-color: inherit;
   fill: inherit;
   color: inherit;
   z-index: 2;
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 }
 
 .menu-active::after {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 110px;
-    background-color: #fd5103;
+    background-color: $accentColor;
   }
 }
 
@@ -35,7 +33,7 @@
   flex-wrap: wrap;
   row-gap: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     row-gap: 63px;
     padding-top: 32px;
   }
@@ -44,7 +42,7 @@
 .menu-active .logo {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     order: 1;
     margin-right: 150px;
@@ -55,7 +53,7 @@
   display: flex;
   order: 4;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -66,7 +64,7 @@
   line-height: 0.86;
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
   }
 }
@@ -99,7 +97,7 @@
   display: flex;
   order: 3;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -111,8 +109,7 @@
 .menu-active .burger-btn {
   order: 2;
 
-  @media screen and (min-width: 768px) {
-    // position: relative;
+  @media screen and (min-width: $tablet) {
     order: 3;
     top: 30px;
     right: 25px;
@@ -125,13 +122,9 @@
   gap: 12px;
   order: 1;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     order: 2;
     margin-right: 246px;
     margin-bottom: 6px;
   }
 }
-
-// .menu-active .header__toggle-dark {
-//   color: #202025;
-// }

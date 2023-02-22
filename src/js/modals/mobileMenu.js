@@ -12,7 +12,6 @@ window
 function onMenuToggle() {
   headerRef.classList.toggle('menu-active');
   changeModalBtn();
-  // onScrollToggle();
 }
 
 function onScrollToggle() {

@@ -10,7 +10,6 @@
   line-height: 1.91;
   margin: 0 auto 60px;
   text-align: center;
-
   color: inherit;
 
   @media screen and (min-width: $tablet) and (max-width: $to-desktop) {
@@ -19,9 +18,9 @@
     font-size: 32px;
     line-height: 1.31;
   }
+
   @media screen and (min-width: $desktop) {
     width: 495px;
-
     font-size: 48px;
     line-height: 1.5;
   }
@@ -31,6 +30,7 @@
   width: 280px;
   height: 308px;
   margin: 0 auto;
+
   @media screen and (min-width: $tablet) {
     width: 345px;
     height: 380px;
@@ -41,7 +41,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  // align-items: center;
   gap: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -53,19 +52,17 @@
 .cocktails__list-item {
   border: 1px solid $accentColor;
   border-radius: 4px;
+
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 32px) / 2);
   }
+
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 64px) / 3);
   }
 }
 
 .cocktail-card {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
   padding-bottom: 24px;
   width: 100%;
   text-align: center;
@@ -77,6 +74,7 @@
   @media screen and (max-width: $tablet) {
     padding-bottom: 20px;
   }
+
   @media screen and (max-width: $desktop) {
     padding-bottom: 28px;
   }
@@ -90,7 +88,6 @@
   @media screen and (min-width: $tablet) {
     width: 335px;
     height: 395px;
-
     margin-bottom: 20px;
   }
 
@@ -107,12 +104,10 @@
 
 .cocktail-card__name {
   margin-bottom: 16px;
-
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-
   color: inherit;
 
   @media screen and (min-width: $tablet) {
@@ -120,6 +115,7 @@
     font-size: 28px;
     line-height: 1.18;
   }
+
   @media screen and (min-width: $desktop) {
     font-size: 32px;
   }
@@ -153,22 +149,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.02em;
-
   border-radius: 4px;
 
   &:hover {
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: $boxShadow;
   }
 
   &--accent {
     background-color: $btnBgColor;
-    color: #ffffff;
+    color: $textBtn;
 
     @media screen and (min-width: $tablet) {
       min-width: 160px;
     }
+
     @media screen and (min-width: $desktop) {
       min-width: 182px;
     }
@@ -176,7 +171,7 @@
 
   &--transp {
     background-color: transparent;
-    border: 1px solid $accentBtnColor;
+    border: 1px solid $btnAccentBgColor;
 
     @media screen and (min-width: $tablet) {
       min-width: 124px;

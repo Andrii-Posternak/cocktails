@@ -1,5 +1,3 @@
-// const apiURL = 'https://thecocktaildb.com/api/json/v1/1';
-
 // Get random cocktails from server
 export async function getRandomCocktails() {
   const response = await fetch(

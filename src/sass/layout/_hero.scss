@@ -1,20 +1,16 @@
 .hero__container {
-  // display: block;
-  // width: 320px;
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
-    // width: 768px;
     height: 294px;
     margin-bottom: 105px;
   }
 
-  @media screen and (min-width: 1280px) {
-    // width: 1280px;
+  @media screen and (min-width: $desktop) {
     height: 439px;
   }
 }
@@ -26,19 +22,17 @@
   line-height: 1.91;
   margin-bottom: 60px;
   width: 300;
-  color: #fd5103;
+  color: $textColorAccent;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 26px;
     line-height: 1.62;
-
     margin-top: 23px;
     margin-bottom: 40px;
     width: 50%;
-    // height: 84px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 52px;
     line-height: 1.54;
     margin-top: 0;
@@ -51,40 +45,19 @@
   height: 245px;
   margin-bottom: 60px;
 
-  // display: block;
-  // margin-left: auto;
-  // margin-right: -20px;
-  // width: 100%;
-  // margin-top: 28px;
-  // margin-bottom: 28px;
-
-  @media screen and (min-width: 768px) {
-    // display: block;
+  @media screen and (min-width: $tablet) {
     width: 336px;
     height: 294px;
     order: 1;
     align-self: flex-end;
-
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 501px;
     height: 439px;
-    // order: 1;
   }
 }
-
-// .hero__search {
-//   width: 50%;
-
-//   @media screen and (min-width: 320px) {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
 
 .hero__text {
   font-family: 'Poppins';
@@ -96,83 +69,39 @@
   color: inherit;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
     text-align: left;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.56;
   }
 }
 
 .hero__form {
-  // width: 324px;
-  // height: 75px;
   font-family: 'Poppins';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.35;
-  // display: flex;
-  // align-items: center;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
-// default select
-// .hero__letter {
-//   // font-family: 'Poppins';
-//   // font-weight: 700;
-//   // font-size: 16px;
-//   // line-height: 1.35;
-//   color: #fd5103;
-//   padding-left: 10px;
-//   border: 1px solid #fd5103;
-//   border-radius: 4px;
-//   width: 93px;
-//   height: 34px;
-//   max-height: 84px;
-
-//   appearance: none;
-//   //   <svg width='13' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M.843 1.594 6.5 7.25l5.657-5.657-.707-.707-4.95 4.95L1.55.887l-.707.707Z' fill='#FD5103'/></svg>
-//   background-image: url("data:image/svg+xml,%3csvg width='13' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.843 1.594 6.5 7.25l5.657-5.657-.707-.707-4.95 4.95L1.55.887l-.707.707Z' fill='%23FD5103'/%3e%3c/svg%3e");
-//   background-repeat: no-repeat;
-//   background-position: right 14px top 50%;
-
-//   &:hover,
-//   &:focus {
-//     outline: none;
-//     color: #ffffff;
-//     background-color: #fd5103;
-//     background-image: url("data:image/svg+xml,%3csvg width='13' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.843 1.594 6.5 7.25l5.657-5.657-.707-.707-4.95 4.95L1.55.887l-.707.707Z' fill='%23FFFFFF'/%3e%3c/svg%3e");
-//   }
-// }
-
-// .hero__option {
-//   font-family: 'Poppins';
-//   font-weight: 700;
-//   font-size: 10px;
-//   line-height: 1.5;
-//   color: #5f6775;
-//   background-color: #ffffff;
-// }
-
-//widescreen list
-
 .hero__alphabet-list {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: #5f6775;
+    color: $textClGrayForLight;
 
     width: 324px;
     display: flex;
@@ -181,19 +110,19 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
     width: 523px;
   }
 }
 
 .hero__alphabets-item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 25px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 40px;
     height: 40px;
   }
@@ -203,7 +132,7 @@
   &:hover,
   &:focus {
     transition: 250ms;
-    color: #fd5103;
+    color: $textColorAccent;
     text-shadow: 0px 4px 4px rgba(95, 103, 117, 0.25), -0 -1px 0 #5f6775,
       0 -1px 0 #5f6775, -0 1px 0 #5f6775, 0 1px 0 #5f6775, -1px -0 0 #5f6775,
       1px -0 0 #5f6775, -1px 0 0 #5f6775, 1px 0 0 #5f6775, -1px -1px 0 #5f6775,
@@ -219,12 +148,12 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.35;
-  color: #fd5103;
+  color: $textColorAccent;
   cursor: pointer;
 
   width: 93px;
   height: 34px;
-  border: 1px solid #fd5103;
+  border: 1px solid $accentColor;
   border-radius: 4px;
   background-color: inherit;
   padding: 6px 10px;
@@ -234,9 +163,7 @@
 }
 
 .hero__select-icon {
-  fill: #fd5103;
-  // fill: inherit;
-
+  fill: $accentColor;
   margin-left: auto;
 }
 
@@ -244,10 +171,10 @@
   width: 93px;
   height: 84px;
   overflow: auto;
-  border: 1px solid #fd5103;
+  border: 1px solid $accentColor;
   border-radius: 4px;
   margin: auto;
-  padding: 6.5px 10px;
+  // padding: 6.5px 10px;
   text-align: left;
   cursor: pointer;
 }
@@ -256,15 +183,15 @@
   font-weight: 700;
   font-size: 10px;
   line-height: 15px;
-  color: #5f6775;
+  color: $textClGrayForLight;
+  padding: 6.5px 10px;
 
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 13px;
+  // }
 
   &:hover {
-    color: #fd5103;
-
+    color: $textColorAccent;
     background-color: rgb(199, 197, 197);
   }
 }
@@ -280,15 +207,15 @@
 .hero__select-box::-webkit-scrollbar-thumb {
   height: 34px;
   border-radius: 4px;
-  background-color: #5f6775;
+  background-color: $textClGrayForLight;
 }
 
 .active-letter {
-  color: #fcfcfc;
-  fill: #fcfcfc;
-  background-color: #fd5103;
+  color: $textColorLight;
+  fill: $textColorLight;
+  background-color: $accentColor;
 }
 
 .active-icon {
-  fill: #fcfcfc;
+  fill: $textColorLight;
 }

@@ -64,6 +64,6 @@ svg {
 
 .dark {
   background-color: $bgDark;
-  color: #fcfcfc;
-  fill: #fcfcfc;
+  color: $textColorLight;
+  fill: $textColorLight;
 }

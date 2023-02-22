@@ -1,15 +1,17 @@
 .container {
-  padding: 20px;
-  // display: flex;
-  // width: 320px;
-  // justify-content: space-between;
-  @media screen and (min-width: 768px) {
-    padding: 30px 33px 60px;
+  width: 320px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
     width: 768px;
+    padding: 0 32px;
   }
-  @media screen and (min-width: 1280px) {
-    padding: 30px 16px;
+
+  @media screen and (min-width: $desktop) {
     width: 1280px;
+    padding: 0 16px;
   }
 }
 
@@ -23,32 +25,47 @@
   outline: inherit;
 }
 
-.is-hidden{
-  display: none;
-}
-
 .button-primary {
-  background: #fe7031;
+  background: $btnBgColor;
   border-radius: 4px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  color: white;
+  color: $textBtn;
   letter-spacing: 0.02em;
 }
 
 .button-secondary {
-  background: white;
+  background: $textBtn;
   border-radius: 4px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  color: #fe7031;
+  color: $btnBgColor;
   letter-spacing: 0.02em;
 
-  border: 2px solid #fd5103;
+  border: 2px solid $btnAccentBgColor;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  backdrop-filter: blur(10px);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.hide-scroll {
+  overflow: hidden;
 }

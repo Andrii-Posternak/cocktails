@@ -2,13 +2,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   margin: 0 auto;
   padding: 40px 20px;
   width: 100%;
-
   font-size: 16px;
   color: inherit;
   background-color: var(--bg-color);
@@ -26,6 +23,7 @@
     padding: 40px 28px 28px;
     width: 90vw;
   }
+
   @media screen and (min-width: $desktop) {
     padding: 40px 28px 28px;
     width: 822px;
@@ -48,7 +46,6 @@
 
 .cocktail__title {
   margin-bottom: 20px;
-
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 32px;
@@ -74,6 +71,7 @@
 
 .cocktail__desc-wrapper {
   margin-bottom: 32px;
+
   @media screen and (min-width: $tablet) {
     order: 3;
     margin: 0;
@@ -92,6 +90,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 24px;
   }
+
   @media screen and (min-width: $desktop) {
     color: var(--bg-heading);
   }
@@ -100,7 +99,7 @@
 .cocktail__desc {
   overflow: auto;
   line-height: calc(28 / 16);
-  color: #bdbdbd;
+  color: $textClGrayForDark;
 }
 
 .cocktail__img-wrapper {
@@ -108,6 +107,7 @@
   width: 100%;
   border-radius: 4px;
   overflow: hidden;
+
   @media screen and (min-width: $mobile) {
     width: 280px;
     height: 280px;
@@ -138,7 +138,6 @@
 
 .cocktail__info-text {
   margin-bottom: 8px;
-
   font-weight: 600;
   line-height: calc(24 / 16);
   color: inherit;
@@ -151,7 +150,7 @@
 
 .cocktail__info-amount {
   margin-bottom: 8px;
-  color: #bdbdbd;
+  color: $textClGrayForDark;
   font-weight: 300;
   font-size: 14px;
   line-height: calc(21 / 14);
@@ -171,11 +170,9 @@
 .cocktail__button {
   display: block;
   padding: 12px 24px;
-
   font-family: 'Roboto';
   font-size: 20px;
   line-height: 24px;
-
   color: $extraDecorColor;
   background-color: $btnAccentBgColor;
   border-radius: 4px;
@@ -196,5 +193,5 @@
 }
 
 .cocktail__ingredients li:hover {
-  color: #fd5103;
+  color: $textColorAccent;
 }

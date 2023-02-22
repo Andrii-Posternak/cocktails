@@ -36,8 +36,6 @@ export function createPagination(drinksData, elementRef, cardMarkup) {
   currentPage = 1;
   elementsRef.paginationEl.innerHTML = '';
 
-  console.log('Page', currentPage);
-
   if (cardsPerPage < drinksData.length) {
     const options = {
       totalItems: drinksData.length,

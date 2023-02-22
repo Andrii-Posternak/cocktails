@@ -3,11 +3,10 @@ $bgLight: #ffffff;
 $bgDark: #202025;
 
 $accentColor: #fd5103;
-$accentBtnColor: #fd5103;
-
 $hoverColor: #fe7031;
 
 // Text color
+$textBtn: #ffffff;
 $textColorLight: #fcfcfc;
 $textColorDark: #202025;
 $textColorAccent: #fd5103;
@@ -20,6 +19,8 @@ $extraDecorColor: #fcfcfc;
 // Button background color
 $btnBgColor: #fe7031;
 $btnAccentBgColor: #fd5103;
+
+$boxShadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 
 //breakpoints
 $mobile: 320px;

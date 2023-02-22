@@ -1,13 +1,13 @@
 @import './utils/fonts';
 @import './utils/variables';
 
-@import './layout/utils/common';
-@import './layout/utils/general';
-@import './layout/utils/palette';
+@import './common/common';
+@import './common/general';
 
 @import './layout/body';
 @import './layout/header';
 @import './layout/burger-menu';
+@import './layout/main';
 @import './layout/hero';
 @import './layout/cocktails';
 @import './layout/pagination';
