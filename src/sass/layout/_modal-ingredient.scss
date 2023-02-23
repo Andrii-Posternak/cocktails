@@ -33,6 +33,10 @@
   height: 32px;
   outline: none;
 
+  &:hover {
+    fill: $hoverColor;
+  }
+
   @media screen and (min-width: $tablet) {
     top: 12px;
     right: 12px;
@@ -80,10 +84,30 @@
 
 .ingredient__desc {
   height: 112px;
-  overflow: auto;
+  overflow-y: scroll;
+
   line-height: calc(28 / 16);
   margin-bottom: 28px;
   color: $textClGrayForLight;
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $accentColor;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $hoverColor;
+  }
 }
 
 .ingredient__info {
