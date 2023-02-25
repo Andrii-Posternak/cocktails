@@ -18,8 +18,8 @@ site is adapted for different devices.
 
 ## Usage
 
-To start the application, you need to open it in a web browser at [link]
-(https://andrii-posternak.github.io/cocktails/).
+To start the application, you need to open it in a web browser at
+[link](https://andrii-posternak.github.io/cocktails/).
 
 - To search for cocktails, you need to enter their name in the search bar in the
   page header and click search.
@@ -27,7 +27,7 @@ To start the application, you need to open it in a web browser at [link]
   any page.
 - To remove cocktails or ingredients from the favorites, click the button
   "Remove" on any page.
-- To switch between main pages and pages of selected cocktails and ingredients
+- To switch between main pages and pages of favorites cocktails and ingredients
   are used navigation in the page header.
 - To switch between light and dark theme is necessary toggle the switch in the
   page header.
